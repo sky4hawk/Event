@@ -54,6 +54,7 @@ textarea {
 
 body{
 	font-family: 'Poppins' , sans-serif;
+	line-height: 1.7;
 }
 .ba-container{
 	padding-left: 15px;
@@ -188,16 +189,51 @@ body{
 	color: #000;
 }
 
+.ba-content{
+	margin: auto;
+	padding: 30px;
+	width: 100%;
+	max-width: 1170px;
+}
+
+.h2-pink{
+	color:#e71cb4;
+	font-size: 62px;
+}
+.ba-about{
+	margin: auto;
+	padding: 30px;
+	width: 100%;
+	max-width: 1170px;
+}
+.ba-container{
+	overflow: hidden;
+}
+
+.ba-container .column{
+	width: 50%;
+	float: left;
+	line-height: 1.2;
+	display: inline-block;
+	
+}
+
 .arrow{
+	
 	position: relative;
 	font-size: 1em;
-	padding-left: 74px;
+	padding-left: 50px;
+	display: flex;
+	-webkit-align-items: center;
+	        align-items: center;
+	margin-bottom: 20px;
+	padding: ;
 	
 } 
 .arrow-number{
-	color: yellow;
-	font-size: 1.5em;
+	font-size: 44px;
 	margin-right: 35px;
+	
 }
 
 
@@ -206,27 +242,97 @@ body{
 	content: "";
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: 20px;
 	height: 15px;
 	width: 3px;
-	background-color: tomato;
 	
 	display: inline-block;
 }
 
 .arrow:before{
 	transform: rotate(45deg);
-	top: 9px;
+	top: 29px;
 }
 
 .arrow:after{
 	transform: rotate(-45deg);
 }
+	 
 
-.ba-about{
+.arrow.yellow .arrow-number{
+	color: yellow;
+	
+	
+}
+.arrow.yellow:before,.arrow.yellow:after{
+	background-color: yellow;
+}
+
+.arrow.pink .arrow-number{
+	color: pink;
+	
+}
+.arrow.pink:before,.arrow.pink:after{
+	background-color: pink;
+}
+
+.arrow.blue .arrow-number{
+	color: blue;
+	
+}
+.arrow.blue:before,.arrow.blue:after{
+	background-color: blue;
+}
+
+.arrow.green .arrow-number{
+	color: green;
+	
+}
+.arrow.green:before,.arrow.green:after{
+	background-color: green;
+}
+
+.arrow.red .arrow-number{
+	color: tomato;
+	
+}
+.arrow.red:before,.arrow.red:after{
+	background-color: tomato;
+}
+
+.ba-hero__btn_pink{
+  border-radius: 10px;
+  height: 54px;
+  background: #C70DBF;
+  
+  font-weight: 500;
+  color: #fff;
+  display: inline-flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  text-decoration: none;
+  padding: 0 5.25em;
+}  
+
+.ba-hero__btn_pink:hover,
+.ba-hero__btn_pink:focus{
+	background-color: black;
+	color: #fff;
+}
+.text-title{
+	margin: auto;
+}
+
+
+
+
+
+/*.ba-about{
 	height: 100vh;
   background-image: -moz-linear-gradient( 90deg, rgb(255,0,204) 0%, rgb(51,51,153) 64%);
   background-image: -webkit-linear-gradient( 90deg, rgb(255,0,204) 0%, rgb(51,51,153) 64%);
   background-image: -ms-linear-gradient( 90deg, rgb(255,0,204) 0%, rgb(51,51,153) 64%);
-}
+}*/
 
